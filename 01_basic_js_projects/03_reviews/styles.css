@@ -1,0 +1,104 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+  background-color: #f5f5f5;
+}
+
+.review-container {
+  width: 50%;
+  min-height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1.5em;
+  background-color: #fff;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 8px #c5c3c3;
+}
+
+.page-heading {
+  font-size: 3rem;
+  margin-bottom: 2em;
+}
+
+/* Image styling */
+.image-container {
+  width: 8em;
+  height: 8em;
+  margin-bottom: 1em;
+  object-fit: cover;
+}
+
+img {
+  width: 100%;
+  border-radius: 10em;
+}
+
+.author {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3em;
+}
+
+.job {
+  text-transform: uppercase;
+  color: #888585;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.review {
+  text-align: center;
+  line-height: 1.3em;
+  color: #818598;
+  margin-bottom: 0.9rem;
+}
+
+.btns-container {
+  margin-bottom: 0.8rem;
+}
+
+/* btn styling  */
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+}
+
+.prev-btn,
+.next-btn {
+  border: none;
+  font-size: 1.5rem;
+  background: none;
+  cursor: pointer;
+}
+
+.random-btn {
+  border: 1.25px solid;
+  padding: 0.2em 0.5em;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgb(177, 175, 175);
+  /* font-weight: 600; */
+}
+
+.random-btn:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+}

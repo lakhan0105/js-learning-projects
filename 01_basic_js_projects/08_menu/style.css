@@ -1,0 +1,144 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* section container styling  */
+.section-container {
+  width: 100%;
+  padding: 5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 1.35rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.underline {
+  height: 0.25em;
+  background-color: #46be46;
+  width: 4.5rem;
+  margin-bottom: 3em;
+}
+
+/* Buttons container styling  */
+.btns-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.btn {
+  margin-right: 1em;
+  padding: 0.3em 0.7em;
+  text-transform: capitalize;
+  font-size: 1rem;
+  background: none;
+  border: 2px solid #c59d5f;
+  border-radius: 0.25em;
+  color: #c59d5f;
+  box-shadow: 0.1px 0.1px 1px #ad8a54;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #c59d5f;
+  box-shadow: 0.2px 0.2px 1.5px #000;
+}
+
+/* menu-container styling */
+.menu-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* menu item styling */
+.menu-item {
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+/* image styling */
+.item-image {
+  height: 12.3em;
+  width: 100%;
+  border: 4.5px solid #c59d5f;
+  border-radius: 0.4em;
+  margin-bottom: 0.8em;
+}
+
+.item-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* item info styling (after image part) */
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* header */
+.header {
+  display: flex;
+  width: 100%;
+  padding: 0.1em;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 1em;
+}
+
+/* item text */
+.item-text {
+  width: 100%;
+  font-size: 0.95rem;
+  text-align: start;
+  padding: 0.1em;
+  color: rgb(121, 120, 120);
+  font-weight: 100;
+  line-height: 1.25em;
+}
+
+/* media queries --------------------------------------------------------------------*/
+@media (min-width: 800px) {
+  .section-container {
+    display: grid;
+    text-align: center;
+  }
+
+  .menu-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: flex-start;
+    column-gap: 2em;
+  }
+}
