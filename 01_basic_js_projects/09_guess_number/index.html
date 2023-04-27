@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num guesser</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <button class="btn again-btn">Again</button>
+        <p class="additional-info">(Between 1 and 20)</p>
+        <h1 class="game-title">Guess My Number!</h1>
+        <div class="result">?</div>
+    </header>
+
+    <main>
+        <!-- input container -->
+        <div class="input-container">
+            <input type="number" class="input-number">
+            <button class="btn check-btn">Check</button>
+        </div>
+
+        <!-- labels-container -->
+        <div class="labels-container">
+            <p class="message">Start guessing...</p>
+
+            <p class="score-label">
+                Score: <span class="score">20</span>
+            </p>
+
+            <p class="highscore-label">
+                HighScore: <span class="highscore">20</span>
+            </p>
+        </div>
+    </main>
+
+
+    <!-- script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
