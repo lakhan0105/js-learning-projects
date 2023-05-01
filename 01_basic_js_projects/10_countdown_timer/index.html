@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="heading">Countdown timer</h1>
+        <p class="message"></p>
+
+        <section class="center-section">
+            <div class="timer-container">
+                <input type="number" class="count hours-count disable" placeholder="hours"></input>
+                <span class="time-txt hide">h</span>
+                <input type="number" class="count mins-count disable" placeholder="mins"></input>
+                <span class="time-txt hide">m</span>
+                <input type="number" class="count secs-count" maxlength="2" placeholder="secs"></input>
+                <span class="time-txt hide">s</span>
+            </div>
+        </section>
+
+        <div class="btn-container">
+            <button class="play-btn btn">
+                <i class="fa-solid fa-circle-play"></i>
+            </button>
+            <button class="pause-btn hide btn">
+                <i class="fa-solid fa-circle-pause"></i>
+            </button>
+            <button class="reset-btn btn">reset</button>
+        </div>
+
+    </main>
+
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/0e392246cd.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

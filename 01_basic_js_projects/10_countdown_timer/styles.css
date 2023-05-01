@@ -1,0 +1,84 @@
+/* IMPORT FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f1f5f8;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  min-height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  padding: 1em 2em;
+  border-radius: 0.3em;
+  box-shadow: 1px 1px 10px rgb(209, 208, 208);
+}
+
+.heading {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+}
+
+.message {
+  margin-bottom: 1em;
+}
+
+.center-section {
+  width: 80%;
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.timer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.count {
+  font-size: 2rem;
+  width: 1.5em;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+}
+
+.time-txt {
+  margin-right: 1em;
+}
+
+.count::placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* CLASSES */
+.hide {
+  display: none;
+}
