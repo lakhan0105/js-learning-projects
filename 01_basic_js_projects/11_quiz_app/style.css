@@ -1,0 +1,74 @@
+/* FONTS IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.card-container {
+  background-color: #fff;
+  min-width: 390px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #c5c2c2;
+  overflow: hidden;
+}
+
+.card-header {
+  width: 100%;
+  padding: 2em;
+}
+
+/* Question styling */
+.question-text {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+/* Answer styling  */
+.option-list-item {
+  margin-bottom: 0.5em;
+}
+
+.option-list-item input {
+  margin-right: 0.3em;
+}
+
+.option-list-item label {
+  cursor: pointer;
+}
+
+/* Button styling  */
+.submit-btn {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background-color: rgb(107, 107, 167);
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(85, 85, 173);
+}
+
+.submit-btn:active {
+  background-color: rgb(94, 94, 173);
+}
