@@ -57,6 +57,12 @@ body {
   z-index: 1;
   border-radius: 0.1em;
   overflow: hidden;
+  transition: 0.15s;
+}
+
+.key:active {
+  background-color: black;
+  color: white;
 }
 
 .key-name {
@@ -74,4 +80,5 @@ body {
 .clicked {
   background-color: black;
   color: white;
+  /* transition: 0.15s; */
 }

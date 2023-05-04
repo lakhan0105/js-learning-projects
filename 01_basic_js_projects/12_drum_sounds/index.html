@@ -13,26 +13,27 @@
 
     <section class="section-center">
         <div class="keys-container">
-            <div class="key clap-key">
-                <p class="key-name">A</p>
+            <div class="key clap-key" data-key-el-code="65">
+                <p class="key-name ">A</p>
                 <p class="sound-name">clap</p>
-                <audio id="clap-audio" src="./sounds/clap-2-95736.mp3"></audio>
             </div>
-            <div class="key crash-key">
-                <p class="key-name">B</p>
+            <div class="key crash-key" data-key-el-code="83">
+                <p class="key-name ">B</p>
                 <p class="sound-name"> crash</p>
-                <audio id="crash-audio" src="./sounds/crash-cymbal-hit-140577.mp3"></audio>
-
             </div>
-            <div class="key punch-key">
-                <p class="key-name">C</p>
+            <div class="key punch-key" data-key-el-code="68">
+                <p class="key-name ">C</p>
                 <p class="sound-name">punch</p>
-                <audio id="punch-audio" src="./sounds/punch-140236.mp3"></audio>
 
             </div>
         </div>
     </section>
     <div class="overlay"></div>
+    <div class="audio-container">
+        <audio id="clap-audio" data-audio-code="65" src="./sounds/clap-2-95736.mp3"></audio>
+        <audio id="crash-audio" data-audio-code="83" src="./sounds/crash-cymbal-hit-140577.mp3"></audio>
+        <audio id="punch-audio" data-audio-code="68" src="./sounds/punch-140236.mp3"></audio>
+    </div>
 
     Sound Effect from <a
         href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=95736">Pixabay</a>

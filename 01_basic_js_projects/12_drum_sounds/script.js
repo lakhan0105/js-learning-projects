@@ -1,23 +1,40 @@
-// Selecting the elements
 const keys = document.querySelectorAll(".key");
 
-// mousedown and mouseup event listeners
+// play audio function which takes the keyElCode/keyboardBtnCode as argument
+function playAudio(specialCode) {
+  let audioEl = document.querySelector(`[data-audio-code="${specialCode}"]`);
+  if (audioEl) {
+    audioEl.currentTime = 0;
+    audioEl.play();
+  } else {
+    console.log("the press key/sound not  available ");
+  }
+}
+
+// Click Event listener ----------------------------------------------------------------------------------
 keys.forEach((key) => {
-  // mousedown event
-  key.addEventListener("mousedown", function (e) {
-    key.classList.add("clicked"); // add clicked class
-
-    if (e.currentTarget.classList.contains("key")) {
-      let audioId = e.currentTarget.lastElementChild.id;
-      let audio = document.querySelector(`#${audioId}`);
-      audio.play();
-    } else {
-      console.log("This key is not working");
-    }
+  key.addEventListener("click", function (e) {
+    const keyElCode = e.currentTarget.dataset.keyElCode;
+    playAudio(keyElCode);
   });
 
-  // mouseup event
-  key.addEventListener("mouseup", function () {
-    key.classList.remove("clicked"); // remove clicked class
-  });
+  key.addEventListener("transitionend", removeClicked);
 });
+
+// keydown Event Listener --------------------------------------------------------------------------------
+window.addEventListener("keydown", (e) => {
+  const keyboardBtnCode = e.keyCode;
+
+  playAudio(keyboardBtnCode);
+  const keyEl = document.querySelector(
+    `.key[data-key-el-code="${keyboardBtnCode}"]`
+  );
+  if (keyEl) {
+    keyEl.classList.add("clicked");
+  }
+});
+
+// Function to remove transition
+function removeClicked(e) {
+  this.classList.remove("clicked");
+}
