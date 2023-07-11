@@ -1,0 +1,221 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("./dan-rogers-lMIvz5b1vRo-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* header styling starts */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3em;
+}
+
+.nav-list-container {
+  display: flex;
+}
+
+.nav-list-container li {
+  margin-left: 1em;
+  font-size: 1.2rem;
+}
+/* header styling ends */
+
+/* Aside styling starts */
+.sidebar-container {
+  min-height: 100vh;
+  width: 20em;
+  position: fixed;
+  top: 3em;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  display: none;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.sidebar-header {
+  height: 3.5em;
+  padding: 0.3em;
+}
+
+.sidebar-card {
+  /* height: 2em; */
+  overflow: hidden;
+  background-color: red;
+}
+
+/* Aside styling ends */
+/* MAIN STYLING STARTS */
+main {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 2.5em);
+  /* background-color: green; */
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.hero-section {
+  width: 100%;
+  text-align: center;
+  padding-top: 6.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-heading {
+  margin-bottom: 1.5em;
+  word-spacing: 0.05em;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* input container styling starts */
+.input-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6em;
+}
+
+.input-container form {
+  font-family: "Poppins", sans-serif;
+  min-width: 20em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .time-container {
+  margin-right: 1em;
+} */
+
+.time-input {
+  font-size: 1rem;
+  text-align: center;
+  width: 8em;
+  border: 1.5px solid #000;
+  outline: none;
+  border-radius: 0.5em;
+  padding: 0.2em 0.3em;
+  background-color: transparent;
+  color: grey;
+}
+
+.start-time::after {
+  content: "start";
+  margin-right: 0.3em;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.end-time::after {
+  content: "end";
+  margin-right: 0.3em;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.task-input {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  padding: 0.1em 0.2em;
+  background-color: transparent;
+  min-width: 18em;
+  letter-spacing: 0.08em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.submit-btn {
+  font-size: 0.9rem;
+  padding: 0.2em 0.7em;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: rgba(0, 0, 0, 0.897);
+  cursor: pointer;
+}
+
+/* task container (article) */
+.task-card {
+  width: 25em;
+  background-color: rgb(251 240 240);
+  z-index: 10;
+  display: grid;
+  white-space: normal;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.task-input-text {
+  margin-left: 0em;
+  white-space: normal;
+  width: 15.5em;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+/* date container */
+.date-container {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* CLASSES */
+.show {
+  display: block;
+}

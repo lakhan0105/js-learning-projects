@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list-container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar-container">
+        <div class="sidebar-header">
+            <h1 class="logo">Daily Tracker</h1>
+        </div>
+
+        <ul class="sidebar-cards-container">
+            <!-- placed dynamically -->
+            <!-- <li class="sidebar-card">
+                <div class="sidebar-date-container">
+                    <p class="sidebar-date"></p>
+                </div>
+                <ul class="sidebar-task-list">
+                    <li class="task-item">
+                        <div class="task-time-text-container">
+                            <span class="start-time-text">10:00am</span>
+                            <span class="end-time-text"> <span>-</span> 12:00pm</span>
+                        </div>
+                        <p class="task-input-text">dmwiefinbwoifewuidhqwodfwqloi8uo</p>
+                    </li>
+                </ul>
+            </li> -->
+        </ul>
+    </aside>
+
+    <main>
+        <section class="hero-section">
+            <h1 class="page-heading">Hey There! What did you Achieve Today?</h1>
+
+            <!-- taking user input -->
+            <article class="input-container">
+                <form>
+                    <div class="time-input-container">
+                        <input type="time" class="start-time time-input" placeholder="start">
+                        <input type="time" class="end-time time-input" placeholder="end">
+                    </div>
+                    <input type="text" class="task-input" placeholder="Write Here"></input>
+                    <input type="submit" class="btn submit-btn"></input>
+                </form>
+            </article>
+
+            <!-- display the tasks in a container -->
+            <article class="task-card">
+                <div class="date-container">
+                    <p class="date"></p>
+                </div>
+                <ul class="task-list">
+                    <!-- added dynamically -->
+                    <!-- <li class="task-item">
+                        <div class="task-time-text-container">
+                            <span class="start-time-text">10:00am</span>
+                            <span class="end-time-text"> <span>-</span> 12:00pm</span>
+                        </div>
+                        <p class="task-input-text">dmwiefinbwoifewuidhqwodfwqloi8uo</p>
+                    </li>
+                     -->
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
